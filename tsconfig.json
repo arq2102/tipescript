@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    // Язык и окружение
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"], // DOM нужен, чтобы console.log был известен без @types/node
+    "module": "commonjs",
+    "moduleDetection": "force", // каждый файл — отдельный модуль, имена не конфликтуют между файлами
+
+    // Входные и выходные файлы
+    "rootDir": ".",
+    "outDir": "dist",
+    "sourceMap": true,
+
+    // Строгость
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
