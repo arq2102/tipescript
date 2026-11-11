@@ -1,1 +1,27 @@
-{"name":"lesson-4","version":"1.0.0","description":"","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"keywords":[],"author":"","license":"ISC","type":"commonjs","devDependencies":{"typescript":"^7.0.2"}}
+{
+  "name": "lesson-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "functions": "tsx src/1-functions.ts",
+    "errors": "tsx src/2-errors.ts",
+    "interface": "tsx src/3-interface.ts",
+    "flights": "tsx src/flights.ts",
+    "flights-bugs": "tsx src/flights-bugs.ts",
+    "run:file": "tsx",
+    "watch": "tsx watch",
+    "check": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "tsx": "^4.23.15"
+  }
+}
