@@ -1,35 +1,35 @@
-// // Data model for an airline delay dashboard
-// type FlightStatus = "scheduled" | "delayed" | "cancelled";
+// Data model for an airline delay dashboard
+type FlightStatus = "scheduled" | "delayed" | "cancelled";
 
-// interface Flight {
-//   code: string;
-//   from: string;
-//   to: string;
-//   delayMin: number;
-//   status: FlightStatus;
-//   international: boolean;
-// }
+interface Flight {
+  code: string;
+  from: string;
+  to: string;
+  delayMin: number;
+  status: FlightStatus;
+  international: boolean;
+}
 
-// const flights: Flight[] = [
-//   { code: "KC 851", from: "NQZ", to: "ALA", delayMin: 0, status: "scheduled", international: false },
-//   { code: "Azamat", from: "ALA", to: "IST", delayMin: 45, status: "delayed", international: true },
-//   { code: "DV 703", from: "NQZ", to: "URA", delayMin: 30, status: "cancelled", international: false },
-// ];
+const flights: Flight[] = [
+  { code: "KC 851", from: "NQZ", to: "ALA", delayMin: 0, status: "scheduled", international: false },
+  { code: "Azamat", from: "ALA", to: "IST", delayMin: 45, status: "delayed", international: true },
+  { code: "DV 703", from: "NQZ", to: "URA", delayMin: 30, status: "cancelled", international: false },
+];
 
-// function delayed(list: Flight[]): Flight[] {
-//   return list.filter((f) => f.status === "delayed");
-// }
+function delayed(list: Flight[]): Flight[] {
+  return list.filter((f) => f.status === "delayed");
+}
 
-// function totalDelay(list: Flight[]): number {
-//   let sum = 0;
-//   for (const f of list) {
-//     sum = sum + f.delayMin;
-//   }
-//   return sum;
-// }
+function totalDelay(list: Flight[]): number {
+  let sum = 0;
+  for (const f of list) {
+    sum = sum + f.delayMin;
+  }
+  return sum;
+}
 
-// console.log(delayed(flights));
-// console.log(totalDelay(flights));
+console.log(delayed(flights));
+console.log(totalDelay(flights));
 
 // const xyz: string[] = ["apple", "banana", "chery"];
 // console.log(xyz);
@@ -81,6 +81,14 @@
 // console.log("NEXT");
 // nums.sort();
 // console.log(nums); //выводит числа пример-100, 1001, 2003, 5006  и тд не смотря на 2-значные числа 
+// nums.sort((a, b) => a - b);
+// // nums.sort((a, b) => b - a);    b a меняли местами
+
+// console.log(nums)
+
+
+
+
 
 
 
@@ -102,6 +110,6 @@
 
 
 
-const arr = new Array(3).fill("x");
-console.log(arr);
-// [ 'x', 'x', 'x' ]
+// const arr = new Array(3).fill("x");
+// console.log(arr);
+// // [ 'x', 'x', 'x' ]

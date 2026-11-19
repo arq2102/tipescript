@@ -10,6 +10,7 @@
     "interface": "tsx src/3-interface.ts",
     "flights": "tsx src/flights.ts",
     "flights-bugs": "tsx src/flights-bugs.ts",
+    "weather": "tsx src/weather.ts",
     "run:file": "tsx",
     "watch": "tsx watch",
     "check": "tsc --noEmit"
